@@ -47,6 +47,7 @@ add_dependencies(tfserving tfserving_headers)
 target_include_directories(tfserving PUBLIC ${PROTO_SRC_DIR})
 target_link_libraries(tfserving PUBLIC
   TensorflowCC::Shared
+  TensorflowCC::Framework
   gRPC::grpc++_reflection
   protobuf::libprotobuf
 )
