@@ -52,12 +52,9 @@ target_link_libraries(tfserving PUBLIC
   protobuf::libprotobuf
 )
 
-add_executable(inception_client
-    ${CMAKE_CURRENT_SOURCE_DIR}/inception_client.cc
-)
-add_dependencies(inception_client
+add_dependencies(
     tfserving_headers
 )
-target_link_libraries(inception_client
+target_link_libraries(
     tfserving
 )
