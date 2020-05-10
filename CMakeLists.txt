@@ -52,9 +52,5 @@ target_link_libraries(tfserving PUBLIC
   protobuf::libprotobuf
 )
 
-add_dependencies(
-    tfserving_headers
-)
-target_link_libraries(
-    tfserving
-)
+add_dependencies(tfserving_headers)
+target_link_libraries(tfserving)
