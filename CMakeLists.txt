@@ -51,6 +51,3 @@ target_link_libraries(tfserving PUBLIC
   gRPC::grpc++_reflection
   protobuf::libprotobuf
 )
-
-add_dependencies(tfserving_headers)
-target_link_libraries(tfserving)
